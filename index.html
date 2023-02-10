@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Accordion | CodePlux</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <ul id="accordion-container">
+        <li>
+            <label onclick="arrowUp()" for="first">This is the first <span>&#x3e</span></label>
+            <input type="radio" name="accordion" id="first" checked>
+            <div class="content">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quam quo, ex eos, sapiente consequatur perspiciatis delectus molestias praesentium eveniet quae possimus. Quia molestias adipisci quae.
+                </p>
+            </div>
+        </li>
+        <li>
+            <label onclick="arrowUp()" for="second">This is the Second <span>&#x3e</span></label>
+            <input type="radio" name="accordion" id="second">
+            <div class="content">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quam quo, ex eos, sapiente consequatur perspiciatis delectus molestias praesentium 
+                </p>
+            </div>
+        </li>
+        <li>
+            <label onclick="arrowUp()" for="third">This is the Last <span>&#x3e</span></label>
+            <input type="radio" name="accordion" id="third">
+            <div class="content">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quam quo, ex eos, sapiente consequatur perspiciatis delectus molestias praesentium eveniet quae possimus. Quia molestias adipisci quae.
+                </p>
+            </div>
+        </li>
+    </ul>
+
+    <script>
+        let arrow = document.getElementsByTagName('span');
+
+        function arrowUp(){
+            arrow.classList.add("clicked")
+        }
+    </script>
+</body>
+</html>
